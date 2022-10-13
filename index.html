@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion.</title>
+    <!----Google font link---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+<!----End Google font link------->
+    <!---css link---->
+    <link rel="stylesheet" href="css/main.css">
+    <!---End css link--->
+</head>
+<body>
+    <!--Navbar---->
+    <div class="navbar container"> 
+        <div class="logo">  
+            <img src="../homepage/img/logo.png" alt="logo">
+        </div>
+        <!-----Navbar-item---->
+        <div class="navbar-item">
+            <ul class="navbar-item-ul">
+                <li><a href="#" class="hover-line"> Home</a></li>
+                <li><a href="#" class="hover-line">Services</a></li>
+                <li><a href="#" class="hover-line">pricing</a></li>
+                <li><a href="#" class="hover-line">Testimonial</a></li>
+                <li><a href="#" class="hover-line">contact Us</a></li>
+            </ul>
+            <img src="img/moon.png" alt="moon" id="icon">
+        </div> 
+        <!----------End Navbar item-->
+    </div>
+    <!-----End Navbar------>
+<!--banner area---->
+    <div class="banner-section">
+        <div class="banner-area-block">
+            <div class="banner-left">
+         <h1 class="banner-title">App, Business & SaaS<br> Landing Page Template</h1>
+        <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt 
+                 dolorum nulla magnam veniam sapiente, fugiat! fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat!</p>  
+             <button class="primary-btn">DOWNLOAD NOW</button>
+             <button class="secondary-btn">LEARN MORE</button>
+        </div>
+        <div class="banner-right">
+            <img src= "img/intro-mobile.png"  alt="mobile-img">
+        </div>
+        </div>
+    </div>
+    <!---End  banner area---->
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+        icon.src = "img/sun.png" ;
+        } 
+        else{
+            icon.src="img/moon.png";
+        }
+        }
+       
+
+
+    </script>
+
+</body>
+</html>
